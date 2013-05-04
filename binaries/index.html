@@ -20,7 +20,7 @@ use cmake. If you wish to build yourself, usually, you can do:
 
 <table>
 <tr><th>Filename</th><th>Size</th><th>Date</th>
-<tr><td><a href="seexpr-1.0.1-win32.zip">seexpr-1.0.1-win32.zip</a></td><td>1.2 MB</td><td>Sat May 04 02:47:09 2013</td></tr>
+<tr><td><a href="seexpr-1.0.1-win32.zip">seexpr-1.0.1-win32.zip</a></td><td>6.1 MB</td><td>Sat May 04 04:54:57 2013</td></tr>
 
 </table>
 
@@ -28,6 +28,12 @@ use cmake. If you wish to build yourself, usually, you can do:
 
 <ol>
 <li>Clone the git repo
+<li>On Windows, the parser and scanner generators are not usually available.
+You can either download bison/flex, or you can build seexpr on Linux or
+Mac OS and copy the generated .cpp and .h for the parser/scanner into the
+SeExpr source. To do the latter, build as usual on Linux, and then copy
+src/SeExpr/generated/* from your Linux source tree to your windows source
+tree.
 <li>Open a visual studio command prompt
 <li>cd into the source directory and make a build directory and cd into it
 <ol>

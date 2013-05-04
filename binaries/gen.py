@@ -43,6 +43,12 @@ fp.write("""
 
 <ol>
 <li>Clone the git repo
+<li>On Windows, the parser and scanner generators are not usually available.
+You can either download bison/flex, or you can build seexpr on Linux or
+Mac OS and copy the generated .cpp and .h for the parser/scanner into the
+SeExpr source. To do the latter, build as usual on Linux, and then copy
+src/SeExpr/generated/* from your Linux source tree to your windows source
+tree.
 <li>Open a visual studio command prompt
 <li>cd into the source directory and make a build directory and cd into it
 <ol>
